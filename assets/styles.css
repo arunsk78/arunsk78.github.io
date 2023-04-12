@@ -42,8 +42,12 @@ header nav .logo {
 
 body {
     background-color: var(--bgDark);
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
     color: white;
+}
+
+.spancss {
+    font-size: 1.07rem;  line-height: 1.5;
 }
 
 .container {
@@ -83,6 +87,9 @@ body {
     color: var(--primary);
 }
 
+.hero .right h3 span {
+    color: var(--primary);
+}
 .hero .right p {
     line-height: 1.9;
     margin-bottom: 2rem;
