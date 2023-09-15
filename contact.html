@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Poppins:wght@200&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <title>Contact</title>
+</head>
+
+<body>
+    <div id="header"></div>
+    
+    <section class="contact" id="contact-content1-0">
+        <div class="container flex items-centre">
+            <div class="left flex-1 justify-right">
+                <h2>Contact Us</span></h2>
+                <!-- <img src="./images/man2.png" height="400px" alt="profile pic"> -->
+            </div>
+            <div class="right flex-1">
+
+                <h4>Feel free to reach out to me at anytime.</h4>
+                <p>Address : </p>
+                <p>Arun Kumar Sathyamangalam Karthikeyan</p>
+                <p>Perth, WA,6103</p>
+
+                <p> Mobile : +61 0469890049 </p>
+                <p>Email : arun143wasetn@gmail.com </p>
+                <p>WhatsApp : +61 0469890049 </p>
+                </p>
+
+            </div>
+        </div>
+    </section>
+    
+   
+    <div id="social"></div>
+    <div id="footer"></div>
+
+    <script>
+        // Load header and footer using JavaScript
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+        
+        fetch('social.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('social').innerHTML = data;
+            });
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+</body>
+
+</html>
